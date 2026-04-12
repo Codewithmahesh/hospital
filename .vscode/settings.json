@@ -1,0 +1,31 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.bg3txt",
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": "keyword.operator.bg3txt",
+                "settings": {
+                    "foreground": "#ffa200"
+                }
+            },
+            {
+                "scope": "string.first-column.bg3txt",
+                "settings": {
+                    "foreground": "#9CDCFE"
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        ".fantomasignore": "ignore",
+        "*.jsx": "javascript",
+        "*.txt": "bg3txt"
+    }
+}
