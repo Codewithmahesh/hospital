@@ -8,7 +8,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  await CityDataService.seedInitialCities();
-
   runApp(const MyApp());
+
+  CityDataService.seedInitialCities().catchError((error) {
+    debugPrint('City seeding failed: $error');
+  });
 }
